@@ -3,6 +3,7 @@
 We introduce MMed-RAG, a powerful multimodal RAG system that boosts the factuality of Medical Vision-Language Models (Med-LVLMs) by up to 43.8%! 🩺  &nbsp; &nbsp; [[Paper](https://arxiv.org/abs/2410.13085)] [[X(Twitter)](https://x.com/HuaxiuYaoML/status/1847097594641584574)]
 
 ## 🚀 News
+- [10/20/2024] The whole data is released in `data/`! Check it out!
 - [10/18/2024] The manuscript can be found on [arXiv](https://arxiv.org/abs/2410.13085).
 
 ## 💡 Overview
@@ -41,9 +42,26 @@ pip install trl
 
 3. Download the required model checkpoints [LLaVA-Med-1.5](https://huggingface.co/microsoft/llava-med-v1.5-mistral-7b) from huggingface.
 
+4. For all the medical datasets, you need firstly apply for the right of access and then download the dataset.
+
+- [MIMIC-CXR](https://physionet.org/content/mimic-cxr-jpg/2.0.0/)
+- [IU-Xray](https://drive.google.com/file/d/1c0BXEuDy8Cmm2jfN0YYGkQxFZd2ZIoLg/view) (Thanks to [R2GenGPT](https://github.com/wang-zhanyu/R2GenGPT) for sharing the file)
+- [Harvard-FairVLMed](https://ophai.hms.harvard.edu/datasets/harvard-fairvlmed10k/)
+- [PMC-OA](https://huggingface.co/datasets/axiong/pmc_oa)
+- [Quilt-1M](https://github.com/wisdomikezogwo/quilt1m)
+
+## 📖 Data Description
+We provide a corresponding json or jsonl file for each dataset, including the image path, question, answer, and original report.
+
+- Training: The data used to train the retriever and fine-tune the Med-LVLM are located in `data/training/retriever/MODALITY` and `data/training/alignment/MODALITY` respectively. Each folder contains data for VQA or report generation tasks.
+
+- Test: All the test data for Med-LVLMs is placed under `data/test/TASK/MODALITY`. 
+
+`TASK`: report/vqa, `MODALITY`: radiology/pathology/ophthalmology.  
+
 ## 📅 Schedule
 
-- [ ] Release the data (VQA and report generation tasks)
+- [x] Release the data (VQA and report generation tasks)
 
 - [ ] Release the training code
 
