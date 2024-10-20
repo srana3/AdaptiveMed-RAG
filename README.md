@@ -1,6 +1,6 @@
 # MMed-RAG: Versatile Multimodal RAG System for Medical Vision Language Models
 
-We introduce MMed-RAG, a powerful multimodal RAG system that boosts the factuality of Medical Vision-Language Models (Med-LVLMs) by up to 43.8%! 🩺 [[Paper](https://arxiv.org/abs/2410.13085)] [[X(Twitter)](https://x.com/HuaxiuYaoML/status/1847097594641584574)]
+We introduce MMed-RAG, a powerful multimodal RAG system that boosts the factuality of Medical Vision-Language Models (Med-LVLMs) by up to 43.8%! 🩺  &nbsp; &nbsp; [[Paper](https://arxiv.org/abs/2410.13085)] [[X(Twitter)](https://x.com/HuaxiuYaoML/status/1847097594641584574)]
 
 ## 🚀 News
 - [10/18/2024] The manuscript can be found on [arXiv](https://arxiv.org/abs/2410.13085).
@@ -16,6 +16,11 @@ When Med-LVLMs are unsure, MMed-RAG teaches the model to intelligently use retri
 
 3️⃣ Copied Homework is Wrong❌ Avoid Interference from Incorrect Homework ✅
 MMed-RAG prevents models from being misled by incorrect retrievals, reducing the risk of generating inaccurate medical diagnoses.
+
+<div align=left>
+<img src=asset/logo.png width=90% />
+</div>
+
 
 ## 📦 Requirements
 1. Clone this repository and navigate to MMed-RAG folder
