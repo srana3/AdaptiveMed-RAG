@@ -64,7 +64,7 @@ We provide a corresponding json or jsonl file for each dataset, including the im
 
 ### Retriver Fine-tuning
 
-Run the following script, make sure to specify the data paths and the checkpoint saving location.
+Use the following script, make sure to specify the data paths and the checkpoint saving location.
 ```
 bash ./scripts/finetune_clip.sh
 ```
