@@ -1,1 +1,6 @@
 backup
+
+train/open_clip/.github
+train/open_clip/.gitignore
+train/open_clip/docs
+train/open_clip/scripts
