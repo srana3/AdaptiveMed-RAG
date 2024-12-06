@@ -71,7 +71,7 @@ bash ./scripts/finetune_clip.sh
 
 
 
-## Preference Fine-tuning
+### Preference Fine-tuning
 Use the script `train_dpo_2stages.sh` in `./script` or the following command, make sure to specify the necessary data paths and the checkpoint saving location.
 ```
 deepspeed --include localhost:0,1,2,3 ./train/dpo/train_dpo_2stages.py \
