@@ -11,12 +11,7 @@ from tqdm import tqdm
 
 from training.data import HarvardDataset
 import debugpy
-# rank = int(os.getenv('RANK', '0'))
-# port = 5678 + rank  # 基础端口 + 进程ID
 
-# debugpy.listen(port)
-# print(f"Process {rank} waiting for debugger to attach on port {port}...")
-# debugpy.wait_for_client()
 
 def retrieve_topk_per_image(logits, val_k_list,retrieve_threshold=''):
     
@@ -248,19 +243,19 @@ if __name__ == "__main__":
     parser.add_argument(
         "--img_root",
         type=str,
-        default="/home/wenhao/Datasets/med/rad/iu_xray/images",
+        default="",
         help="Path to image root directory",
     )
     parser.add_argument(
         "--train_json",
         type=str,
-        default="/home/wenhao/Project/intern/xiapeng/med-dpo/annotation/iuxray/data_annotations/iu_xray_annotation_train_all.json",
+        default="",
         help="Path to training JSON annotation file",
     )
     parser.add_argument(
         "--eval_jsonl",
         type=str,
-        default="/home/wenhao/Project/intern/kangyu/annotations+scripts+outputs/annotations+scripts/uncertainty/reference/iuxray_test_tokenProb_withReport.jsonl",
+        default="",
         help="Path to evaluation JSONL file",
     )
     parser.add_argument(
@@ -272,14 +267,14 @@ if __name__ == "__main__":
     parser.add_argument(
         "--checkpoint_path",
         type=str,
-        default="/home/wenhao/Project/intern/xiapeng/med-dpo/open_clip/src/logs/2024_06_07-01_31_24-model_hf-hub:thaottn-OpenCLIP-resnet50-CC12M-lr_0.001-b_512-j_4-p_amp/checkpoints/epoch_360.pt",
+        default="",
         help="Path to model checkpoint",
     )
     parser.add_argument(
         "--config_type", type=str, default="tokenProb", help="Configuration type"
     )
     parser.add_argument(
-        "--output_path", type=str, default="/home/wenhao/Project/intern/kangyu/annotations+scripts+outputs/annotations+scripts/uncertainty/reference/val_topk_report.jsonl", help="Path to output JSONL file"
+        "--output_path", type=str, default="", help="Path to output JSONL file"
     )
     parser.add_argument(
         "--clip_threshold",type=str,default='',help='clip threshold for retrieval'

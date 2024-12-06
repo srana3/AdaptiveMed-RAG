@@ -38,5 +38,5 @@ CUDA_VISIBLE_DEVICES=$CUDA_DEVICES deepspeed --include localhost:$CUDA ./train/d
     --dataloader_num_workers 4 \
     --lazy_preprocess True \
 
-done
+
 

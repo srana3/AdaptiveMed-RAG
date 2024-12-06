@@ -9,3 +9,4 @@ train/dpo/playground
 train/dpo/scripts
 train/dpo/docs
 train/dpo/wandb
+train/open_clip/README.md
