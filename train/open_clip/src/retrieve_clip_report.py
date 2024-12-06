@@ -9,7 +9,6 @@ from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm
 
-sys.path.append("/home/wenhao/Project/intern/xiapeng/med-dpo/open_clip/src")
 from training.data import HarvardDataset
 import debugpy
 # rank = int(os.getenv('RANK', '0'))

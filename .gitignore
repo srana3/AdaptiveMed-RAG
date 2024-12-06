@@ -4,3 +4,8 @@ train/open_clip/.github
 train/open_clip/.gitignore
 train/open_clip/docs
 train/open_clip/scripts
+
+train/dpo/playground
+train/dpo/scripts
+train/dpo/docs
+train/dpo/wandb

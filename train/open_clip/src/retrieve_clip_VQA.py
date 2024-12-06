@@ -9,16 +9,9 @@ from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
 from tqdm import tqdm
 
-sys.path.append("/home/wenhao/Project/intern/xiapeng/med-dpo/open_clip/src")
+sys.path.append("/home/wenhao/Project/intern/kangyu/repos/MMed-RAG/train/open_clip/src")
 from training.data import HarvardDataset,HarvardVQADataset
 import debugpy
-# rank = int(os.getenv('RANK', '0'))
-# port = 5678 + rank  # 基础端口 + 进程ID
-
-# debugpy.listen(port)
-# print(f"Process {rank} waiting for debugger to attach on port {port}...")
-# debugpy.wait_for_client()
-
 def retrieve_topk_per_image(logits, val_k_list,retrieve_threshold=''):
     
     if not retrieve_threshold:
