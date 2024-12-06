@@ -111,7 +111,7 @@ deepspeed --include localhost:0,1,2,3 ./train/dpo/train_dpo_2stages.py \
     --lazy_preprocess True \
 ```
 
-## Retrieve
+## 🥖 Retrieve
 Use `retrieve_clip_report.sh` or `retrieve_clip_VQA.sh` to retrieve reports for report generation or VQA task. The script uses Harvard-FairVLMed dataset as an example. Make sure to specify the necessary data paths and the saving location.
 
 
