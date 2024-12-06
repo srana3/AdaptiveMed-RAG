@@ -69,8 +69,6 @@ Use the following script, make sure to specify the data paths and the checkpoint
 bash ./scripts/finetune_clip.sh
 ```
 
-## Retrieve
-Use `retrieve_clip_report.sh` or `retrieve_clip_VQA.sh` to retrieve reports for report generation or VQA task. The script uses Harvard-FairVLMed dataset as an example. Make sure to specify the necessary data paths and the saving location.
 
 
 ## Preference Fine-tuning
@@ -111,8 +109,10 @@ deepspeed --include localhost:0,1,2,3 ./train/dpo/train_dpo_2stages.py \
     --gradient_checkpointing True \
     --dataloader_num_workers 4 \
     --lazy_preprocess True \
-
 ```
+
+## Retrieve
+Use `retrieve_clip_report.sh` or `retrieve_clip_VQA.sh` to retrieve reports for report generation or VQA task. The script uses Harvard-FairVLMed dataset as an example. Make sure to specify the necessary data paths and the saving location.
 
 
 <!-- ### Preference Fine-tuning -->
