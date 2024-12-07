@@ -34,7 +34,7 @@ def parse_args(args):
     parser.add_argument(
         "--img_root",
         type=str,
-        default='/home/wenhao/Datasets/med/rad/iu_xray/images',
+        default='',
         help="Path to image root of IUXray dataset.",
     )
     parser.add_argument(

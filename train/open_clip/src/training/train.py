@@ -426,7 +426,7 @@ def retrieve_report(model, data, epoch, args, tb_writer=None, tokenizer=None,all
             else:
                 topk_values, topk_indices = logits['image_to_text'].topk(args.retrieve_topk, dim=1)
                 pred_per_val_image = topk_indices
-            # jsonl_file=os.path.join(f"/home/wenhao/Project/intern/xiapeng/med-dpo/annotation/iu_xray_raw_retrieved_report_top{retrieve_topk}.jsonl")
+            
             jsonl_file = os.path.join(f"{args.retrieve_output_path}_epoch{args.resume_id}_top{args.retrieve_topk}.jsonl")
             if args.retrieve_topk==1:
                 with open(jsonl_file, "w") as f:

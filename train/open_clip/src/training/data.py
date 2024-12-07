@@ -970,9 +970,7 @@ class HarvardDataset(Dataset):  # TODO
         # else:
         #     with open(json_file, 'r') as file:
         #         self.data = json.load(file)["test"]
-        if test:
-            # img_root='/home/wenhao/Datasets/med/Harvard/Validation/'
-            img_root = "/home/wenhao/Datasets/med/Harvard/Test/"
+        
         with open(json_file, "r") as file:
             self.data = json.load(file)
         # Flatten the list of image paths and associate each with the corresponding report
