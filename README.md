@@ -35,8 +35,9 @@ cd MMed-RAG
 ```Shell
 conda create -n MMed-RAG python=3.10 -y
 conda activate MMed-RAG
+cd MMed-RAG
 pip install --upgrade pip  # enable PEP 660 support
-pip install -e .
+pip install -r requirements.txt
 pip install trl
 ```
 
