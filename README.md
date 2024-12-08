@@ -125,7 +125,7 @@ Use `retrieve_clip_report.sh` or `retrieve_clip_VQA.sh` to retrieve reports for 
 
 - [x] Release the data (VQA and report generation tasks)
 
-- [ ] Release the training code
+- [x] Release the training code
 
 ## 📚Citation
 
