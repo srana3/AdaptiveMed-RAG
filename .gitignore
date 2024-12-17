@@ -6,7 +6,7 @@ train/open_clip/docs
 train/open_clip/scripts
 
 train/dpo/playground
-train/dpo/scripts
+# train/dpo/scripts
 train/dpo/docs
 train/dpo/wandb
 train/open_clip/README.md
